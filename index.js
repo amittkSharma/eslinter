@@ -1,10 +1,15 @@
 module.exports = {
-  globals: {
-    MyGlobal: true,
+  env: {
+    browser: true,
+    node: true,
   },
-
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  root: true,
+  extends: ['react-app', 'eslint:recommended'],
   rules: {
-    semi: [2, 'always'],
     'no-console': 'error',
   },
 }
